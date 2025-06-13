@@ -1,0 +1,19 @@
+{
+    "name": "omare/projet_ajo",
+    "autoload": {
+        "psr-4": {
+            "Omare\\ProjetAjo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "omar"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^4.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    }
+}
