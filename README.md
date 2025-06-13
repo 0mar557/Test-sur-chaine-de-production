@@ -81,9 +81,9 @@ Pour toute question ou suggestion, contactez-moi à :
 
 ---
 
-<h1 align="center">
+<h2 align="center">
 ⭐ Merci de laisser une étoile si ce projet vous a plu ! ⭐
-</h1>
+</h2>
 
 <p align="center">
 <em>Projet réalisé au Lycée Dorian dans le cadre du BTS CIEL 2024/2025.</em>
