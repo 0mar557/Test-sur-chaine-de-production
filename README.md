@@ -1,74 +1,90 @@
-# Test sur chaîne de production - BTS CIEL 2024/2025
+<p align="center">
+<h1 align="center">🔧 Test sur chaîne de production 🔬</h1>
+<h3 align="center">Automatisation du contrôle qualité en électronique - BTS CIEL 2024/2025 - Lycée Dorian</h3>
+</p>
 
-![BTS CIEL](https://img.shields.io/badge/BTS-CIEL-blue) ![Licence MIT](https://img.shields.io/badge/License-MIT-green) ![Lycée Dorian](https://img.shields.io/badge/Lycée-Dorian-red)
-
----
-
-## 🚀 Présentation
-
-Ce projet automatise le contrôle qualité en fin de chaîne pour des appareils électroniques.  
-Il pilote des instruments de mesure (oscilloscope, multimètre, générateur), exécute des tests précis, affiche un verdict clair (bon/mauvais), et archive tous les résultats dans une base de données consultable via une interface web intuitive.
-
-**Objectif :** Gagner du temps, réduire les erreurs humaines, et offrir un suivi fiable et en temps réel des tests industriels.
+<p align="center">
+<a href="https://github.com/0mar557/Test-sur-chaine-de-production/blob/d68c1dc6264e85869d21461591bceec1b387220e/Projet%20CIEL-IR%202025%20%20%E2%80%93%20El%20nmrawy%20Omar%20-%20Da%20Silva%20Anthony%20-%20Jegatheeswaran%20Jenoush%20%E2%80%93%20Test%20sur%20cha%C3%AEne%20de%20production%20%E2%80%93%20Rapport.pdf">📄 Rapport Complet</a> | <a href="https://youtu.be/8ID-ndiZLLg">🎬 Vidéo Démo</a> | <a href="https://github.com/0mar557/Test-sur-chaine-de-production">📂 Code Source</a>
+</p>
 
 ---
 
-## 🎥 Démo du projet
+## 🎯 Objectif du projet
 
-[![Voir la démo](https://img.youtube.com/vi/8ID-ndiZLLg/maxresdefault.jpg)](https://youtu.be/8ID-ndiZLLg)
+Ce projet a pour but d'automatiser les tests qualité en fin de chaîne pour les appareils électroniques. Il combine logiciel (Visual studio Code/Qt), language(C++/PHP/HTML/CSS/javascript), matériel (instruments de mesure), et base de données (MySQL) pour garantir un suivi efficace, rapide et précis des produits testés.
 
-Cliquez sur l’image pour regarder la vidéo de démonstration.
----
-
-## 📋 Fonctionnalités principales
-
-- Pilotage automatique des instruments via bus IEEE-488 (GPIB)
-- Identification des appareils par lecture de code-barres RS232
-- Test automatisé avec analyse selon seuils configurables
-- Verdict "Bon" ou "Mauvais" affiché à l’opérateur
-- Archivage des résultats dans une base MySQL pour traçabilité complète
-- Interface web PHP pour consultation des historiques, statistiques et gestion sécurisée
-- Mode technicien avec accès avancé : modification des seuils, visualisation détaillée
+**Avantages clés :**
+- Réduction des erreurs humaines.
+- Gain de temps considérable.
+- Traçabilité complète via base de données.
 
 ---
 
-## 🏗️ Architecture technique
+## 🎥 Démonstration
 
-| Composant           | Technologie / Matériel                     | Rôle                                  |
-|---------------------|-------------------------------------------|-------------------------------------|
-| Banc de mesure      | Oscilloscope Rigol MSO5074, Multimètres FI 2348MT, Générateur Rigol DG1022Z | Acquisition des signaux et mesures  |
-| Application PC       | C++ avec Qt Creator                       | Pilotage instruments, interface opérateur |
-| Serveur Web          | WAMP (Windows + Apache + MySQL + PHP)    | Stockage des résultats, interface web |
-| Lecteur code-barres  | Lecteur RS232                            | Identification des appareils         |
+[![Démo du projet](https://img.youtube.com/vi/8ID-ndiZLLg/maxresdefault.jpg)](https://youtu.be/8ID-ndiZLLg)
+
+Cliquez sur l'image pour voir la démo vidéo.
 
 ---
 
-## 📦 Installation et déploiement
+## 🚀 Fonctionnalités
 
-### Prérequis
+- ✅ **Pilotage automatique** : Instruments via bus IEEE-488 (GPIB).
+- ✅ **Identification rapide** : Lecture de codes-barres RS232.
+- ✅ **Analyse précise** : Seuils configurables stockés dans la base MySQL.
+- ✅ **Interface intuitive** : Verdict clair ("Bon/Mauvais").
+- ✅ **Archivage sécurisé** : Résultats consultables via une interface web PHP.
+- ✅ **Mode avancé technicien** : Gestion approfondie des seuils et analyses détaillées.
 
-- Windows avec WAMP installé
-- Qt Creator + compilateur C++ compatible
-- Instruments connectés et configurés (oscilloscope, multimètre, générateur)
-- Lecteur code-barres connecté en RS232
+---
 
-### Étapes
+## 🛠️ Architecture technique
 
-1. Cloner le dépôt :  
-   ```bash
-   git clone https://github.com/tonpseudo/Test-sur-chaine-production.git
-   cd Test-sur-chaine-production 
+| Composant              | Technologie / Matériel                                            | Rôle                               |
+|------------------------|-------------------------------------------------------------------|------------------------------------|
+| 🖥️ **Application PC**   | C++ / Qt Creator                                                  | Pilotage instruments, interface    |
+| 📡 **Instruments**       | Oscilloscope Rigol MSO5074, Multimètres FI 2348MT, Générateur DG1022Z | Acquisition et mesure des signaux  |
+| 🌐 **Serveur Web**      | WAMP (Windows + Apache + MySQL + PHP)                            | Stockage résultats et web          |
+| 📊 **Base de données**  | MySQL                                                             | Archivage résultats et seuils      |
+| 📟 **Lecteur code-barres** | RS232                                                             | Identification rapide des appareils|
 
-2. Installer la base de données : 
-  La structure SQL de la base est fournie dans le fichier `database_create.sql` (dans `/sql`).
-  Pour créer la base sans données, importez ce fichier dans votre serveur MySQL.  
-  Les données de test ne sont pas incluses afin que vous puissiez démarrer avec une base propre.
+---
 
-    ```bash
-     mysql -u utilisateur -p nom_de_la_base < database_create.sql
+## 📦 Installation rapide
+
+### 1. Cloner le dépôt
+```bash
+git clone https://github.com/0mar557/Test-sur-chaine-de-production.git
+cd Test-sur-chaine-production
+```
+
+### 2. Installer la base de données
+Le fichier SQL se trouve dans `/sql/database_create.sql` :
+
+```bash
+mysql -u root -p Projet_Ajo < sql/database_create.sql
+```
+
+### 3. Déployer l'interface web
+Placez les fichiers PHP dans votre serveur WAMP (`www`).
+
+### 4. Compiler l'application Qt
+Ouvrez `/src_cpp` avec Qt Creator, compilez et lancez.
+
+---
 
 ## 📬 Contact
-Pour toute question, contactez-moi à :
-omar.elnmrawy@example.com
 
-# ⭐ Merci de laisser une étoile ⭐ si ce projet vous a été utile !
+Pour toute question ou suggestion, contactez-moi à :  
+📧 **omar.elnmrawy@hotmail.com**
+
+---
+
+<h1 align="center">
+⭐ Merci de laisser une étoile si ce projet vous a plu ! ⭐
+</h1>
+
+<p align="center">
+<em>Projet réalisé au Lycée Dorian dans le cadre du BTS CIEL 2024/2025.</em>
+</p>
